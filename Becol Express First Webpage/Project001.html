@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/app.js"></script>
+    <title>Becol Express| Welcome </title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <span id="branding">
+                <h1>Becol Express Buffet</h1>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="logo">
+            <img id="Mascot" src="img/logo.jpg" alt="logo">
+            <h2>1965-2020</h2>
+        </div>
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur voluptatum consequatur
+                consequuntur sit rem velit maxime animi dolorem inventore. Cupiditate repudiandae incidunt nesciunt aut.
+                Hic officia aperiam sit dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti minus explicabo temporibus ab
+                harum corporis blanditiis voluptas, fugiat incidunt! Lorem ipsum dolor sit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nulla, placeat.</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe to our newsletter</h2>
+        <form action="#">
+            <input type="email" placeholder="Email Address">
+            <button class="button_1">Submit</button>
+        </form>
+    </section>
+
+    <section id="services">
+        <span id="title-section">
+            <h2>Service Menu</h2>
+        </span>
+        <div class="box">
+            <h3>Breakfast</h3>
+            <img id="icon-menu" src="img/breakfast.png" alt="breakfast-icon">
+            <h4>We Serve</h4>
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+            </ul>
+            <h4>7:00 AM - 10:00 AM</h4>
+            <h4>Php. 500.00</h4>
+        </div>
+        <div class="box">
+            <h3>Lunch</h3>
+            <img id="icon-menu" src="img/lunch.png" alt="lunch-icon">
+            <h4>We Serve</h4>
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+            </ul>
+            <h4>7:00 AM - 10:00 AM</h4>
+            <h4>Php. 700.00</h4>
+        </div>
+        <article class="box">
+            <h3>Dinner</h3>
+            <img id="icon-menu" src="img/dinner.png" alt="dinner-icon">
+            <h4>We Serve</h4>
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+                <li>Lorem, ipsum</li>
+            </ul>
+            <h4>11:00 PM - 4:00 PM</h4>
+            <h4>Php.900.00</h4>
+        </article>
+    </section>
+
+    <section id="bottom">
+        <div id="reservation">
+            <h2>Reservation</h2>
+            <form action="#">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="Fname" onblur="validateFirstName();" placeholder="Enter First Name" required>
+                <label id="responseFname">&nbsp;</label>
+                <br>
+
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="Lname" onblur="validateLastName();" placeholder="Enter Last Name"required>
+                <label id="responseLname">&nbsp;</label>
+                <br>
+
+                <label for="PhoneNumber">Phone: </label>
+                <input type="text" id="Phone" onblur="validatePhone();" placeholder="xxxx-xxx-xxxx" required>
+                <label id="responsePhoneNumber">&nbsp;</label>
+                <br>
+
+                <label for="EmailAddress">Email Address: </label>
+                <input type="email" id="Email" onblur="validateEmail();" placeholder="Email Adress" required>
+                <label id="responseEmail">&nbsp;</label>
+                <br>
+
+                <label for="HomeAddress">Home Address: </label>
+                <input type="address" id="Address" onblur="validateHomeAddress();" placeholder="#House no.,Street, Building"required>
+                <label id="responseHomeAdress">&nbsp;</label>
+                <br>
+                
+                <label for="NumberOfSeats">Number of Seats: </label>
+                <input type="number" min="2" max="30" required>
+                <br>
+
+                <button class="button_1" onclick="validateForm();">Send</button>
+    
+            </form>
+        </div>
+    
+        <aside id="about">
+            <article class="about-us">
+                <h2 #title-section>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolore vitae recusandae
+                    obcaecati cumque at nobis tenetur! Facilis dolorum quo, laboriosam debitis, alias ratione fuga
+                    et laborum praesentium deleniti eius possimus quam ab porro minus maiores nam veniam consequatur
+                    quod saepe fugiat odit ipsa beatae? Repellendus ut vel natus quos? Consequatur natus voluptas
+                    odio laboriosam delectus, totam a nostrum, neque at autem voluptatum doloribus error ea, enim
+                    sed ipsa et alias distinctio veritatis architecto vitae consectetur ut! Sequi eveniet magni
+                    molestiae, dignissimos dicta dolore nemo autem, maiores iusto dolorum inventore vitae, illo
+                    numquam quam qui eos! Earum similique officia eligendi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum suscipit ratione veniam
+                    quidem veritatis saepe iure aspernatur aperiam nam deserunt recusandae minima tempore sequi
+                    facilis eius numquam quae vero dolorem doloribus reprehenderit itaque, temporibus impedit
+                    excepturi! Ratione, fuga error.</p>
+
+            </article>
+        </aside id="About-us">
+    </section>
+    
+
+    <footer>
+        <p>Becol Express Buffet, Copyright &copy; 2020</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet commodi mollitia</p>
+    </footer>
+</body>
+</html>
